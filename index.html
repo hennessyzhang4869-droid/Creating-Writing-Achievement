@@ -1,99 +1,64 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>作品集 | 内容策划 & 产品运营</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <!-- 导航栏 -->
-    <nav>
-        <div class="container">
-            <div class="logo">PORTFOLIO</div>
-            <ul class="nav-links">
-                <li><a href="#about">关于我</a></li>
-                <li><a href="#projects">项目作品</a></li>
-                <li><a href="#contact">联系</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- 英雄页 -->
-    <header id="about">
-        <div class="container">
-            <h1 class="fade-in">创新内容策划 <br>& <span class="highlight">用户增长专家</span></h1>
-            <p class="subtitle fade-in">专注数据驱动的内容运营与用户研究 | 探索 AI 赋能的叙事边界</p>
-            <div class="tags fade-in">
-                <span>内容运营</span>
-                <span>产品逻辑</span>
-                <span>用户调研</span>
-                <span>交互叙事</span>
-            </div>
-        </div>
-    </header>
-
-    <!-- 项目展示 -->
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title">精选项目 Case Studies</h2>
+<!-- 项目展示：双驱动核心作品 -->
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">精选项目 Portfolio Highlights</h2>
+        
+        <div class="project-grid">
             
-            <div class="project-grid">
-                <!-- 项目 1: 内容策划 -->
-                <div class="project-card">
-                    <div class="project-img-placeholder">
-                        <p>[请在此处上传带水印的项目截图]</p>
+            <!-- 维度 1: 公共政策与数据分析 -->
+            <div class="project-card data-project">
+                <div class="project-tag">Data & Policy</div>
+                <div class="project-info">
+                    <h3>食物浪费预防周 (FWPW) 参与行为研究</h3>
+                    <p class="subtitle">合作伙伴：Washington State Department of Ecology</p>
+                    
+                    <div class="project-summary">
+                        <p><strong>核心痛点：</strong>参与率低并非因为缺乏兴趣，而是因为“认知盲区”与“高参与门槛”。</p>
                     </div>
-                    <div class="project-info">
-                        <h3>AI 辅助短视频内容生态建设</h3>
-                        <p class="project-summary"><strong>摘要：</strong>通过 AI 工具流优化内容产出效率，实现内容从文字到视觉的自动化转化。</p>
-                        <div class="details">
-                            <p><strong>我的职责：</strong>项目主理人，负责工作流搭建与提示词工程优化。</p>
-                            <p><strong>方法：</strong>采用 A/B 测试对比不同 AI 生成风格，通过数据反馈迭代剧本逻辑。</p>
-                            <p><strong>成果：</strong>内容制作周期缩短 40%，账号关注增长率提升 25%。</p>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- 项目 2: 用户研究 -->
-                <div class="project-card">
-                    <div class="project-img-placeholder">
-                        <p>[请在此处上传带水印的项目截图]</p>
+                    <div class="data-findings">
+                        <h4>🔍 关键调研发现 (N=52)</h4>
+                        <ul>
+                            <li><strong>认知鸿沟：</strong>超过 50% 的受访者此前从未听说过该项目，基础曝光急需提升。</li>
+                            <li><strong>阻碍因素：</strong>主要参与障碍为“参与路径不清晰”及“员工时间成本过高”。</li>
+                            <li><strong>需求转向：</strong>用户对“现成工具（海报/模板）”的需求远高于单纯的政策宣传。</li>
+                        </ul>
                     </div>
-                    <div class="project-info">
-                        <h3>特定垂直人群消费行为调研</h3>
-                        <p class="project-summary"><strong>摘要：</strong>针对特定细分市场进行的深度用户画像描绘与需求分析。</p>
-                        <div class="details">
-                            <p><strong>我的职责：</strong>首席研究员，设计问卷、主持深度访谈并撰写报告。</p>
-                            <p><strong>方法：</strong>定性访谈 (N=20) + 定量问卷 (N=500) + 漏斗转化模型分析。</p>
-                            <p><strong>成果：</strong>识别出 3 个核心痛点，为产品迭代方向提供了关键数据支持。</p>
-                        </div>
+
+                    <div class="details">
+                        <p><strong>方法论：</strong>R 语言回归分析、定性访谈、定量问卷、漏斗转化模型[cite: 1]。</p>
+                        <p><strong>策略转化：</strong>建议将重心从“提高意识”转向“降低门槛”，通过提供决策树与 SOP 支持，直接赋能学校、企业及社区[cite: 1]。</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- 联系方式 -->
-    <section id="contact">
-        <div class="container">
-            <h2>联系我</h2>
-            <div class="email-box">
-                <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+            <!-- 维度 2: 叙事设计与 AI 适配 -->
+            <div class="project-card creative-project">
+                <div class="project-tag">Narrative & AI</div>
+                <div class="project-info">
+                    <h3>“九洲宇宙”系列：大型沉浸式叙事设计</h3>
+                    <p class="subtitle">50万字原创宏大世界观改编计划</p>
+                    
+                    <div class="project-summary">
+                        <p><strong>核心挑战：</strong>如何在保持《浮生录》等长篇作品逻辑一致性的前提下，利用 AI 实现高质量的跨媒介视觉转化[cite: 1]。</p>
+                    </div>
+
+                    <div class="creative-highlights">
+                        <h4>🖋️ 作品集精选</h4>
+                        <ul>
+                            <li><strong>世界观架构：</strong>深耕“九洲”架空宇宙，包含瀛洲、中洲等复杂的势力纷争与历史积淀[cite: 1]。</li>
+                            <li><strong>核心叙事：</strong>以《浮生录》为代表，通过对旻王墨宸、公孙浅浅等角色的深挖，探讨权力与人性的冲突[cite: 1]。</li>
+                            <li><strong>AI 工作流：</strong>利用 Claude 进行剧本拆解，结合 Midjourney 实现角色一致性视觉输出[cite: 1]。</li>
+                        </ul>
+                    </div>
+
+                    <div class="details">
+                        <p><strong>产出：</strong>完成 1.2 万字剧本的 AI 视觉化适配，构建了高效的“文学-视觉”转化模型[cite: 1]。</p>
+                        <p><strong>跨语言能力：</strong>发挥中、英、日三语优势，确保叙事内容在不同文化背景下的精准传达[cite: 1]。</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- 页脚 -->
-    <footer>
-        <div class="container">
-            <p class="copyright">All materials are for portfolio review only. Please do not copy, reproduce, or distribute without permission.</p>
-            <p>© 2026 Designed for Career Growth.</p>
         </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+    </div>
+</section>
