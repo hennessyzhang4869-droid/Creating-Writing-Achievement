@@ -455,4 +455,62 @@ tr:last-child td {
     .section-title {
         font-size: 30px;
     }
+}.series-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 42px 0 54px;
+}
+
+.series-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background-color: white;
+    border: 1px solid #eadfd3;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.series-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.series-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    background-color: #f4ede5;
+}
+
+.series-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.series-info h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    color: #222;
+}
+
+.series-info p {
+    margin: 0;
+    color: #666;
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+    .series-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .series-card img {
+        height: 160px;
+    }
 }
