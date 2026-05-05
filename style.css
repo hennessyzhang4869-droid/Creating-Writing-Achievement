@@ -505,6 +505,40 @@ tr:last-child td {
     font-size: 15px;
 }
 
+.work-detail {
+    padding: 80px 0;
+    background-color: #fffaf4;
+}
+
+.work-detail h1 {
+    font-size: 42px;
+    line-height: 1.25;
+    margin: 14px 0 12px;
+}
+
+.detail-cover {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 22px;
+    margin: 28px 0;
+    border: 1px solid #eadfd3;
+    background-color: #f4ede5;
+}
+
+.back-link {
+    display: inline-block;
+    color: #8a1f2d;
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .series-gallery {
         grid-template-columns: 1fr;
@@ -512,5 +546,13 @@ tr:last-child td {
 
     .series-card img {
         height: 160px;
+    }
+
+    .work-detail h1 {
+        font-size: 32px;
+    }
+
+    .detail-cover {
+        height: 200px;
     }
 }
